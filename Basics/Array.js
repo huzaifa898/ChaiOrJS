@@ -32,3 +32,18 @@ const str = "A Quick Brown fox jumps over the lazy dog and the dog barks at the 
 const reversedStr = str.split(" ").reverse().join(" ");
 console.log(reversedStr);
 
+const marvelHeros = ["Ironman", "Spiderman", "Thor", " Hulk", "Captain America", "Black Panther", "Black Widow", "Doctor Strange", "Antman", "Wanda"];
+const dcHeros = ["Superman", "Batman", "Flash", "Wonderwoman", "Aquaman", "Cyborg", "Green Lantern", "Martian Manhunter", "Shazam", "Green Arrow"]; 
+const allHeros = marvelHeros.concat(dcHeros);
+console.log(allHeros);  //concatenation of two arrays
+/// properly merged aarry into array
+// on ... speard method  
+const allHeros2 = [...marvelHeros, ...dcHeros];
+console.log(allHeros2);  //concatenation of two arrays
+
+
+//flat method of one arrrayinto more arrays 
+const anotherArray = [1, 2, [3, 4, [5, 6]]];
+console.log(anotherArray.flat(Infinity));
+
+// for data scriping 
